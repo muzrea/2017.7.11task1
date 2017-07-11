@@ -1,0 +1,43 @@
+1.
+input:  score:[[string,number,number,number,number],..., [string,number,number,number,number]]
+output:	score:{[name:string,math:number,chinese:number,english:number,coding:number],...    [name:string,math:number,chinese:number,english:number,coding:number]}//5min 
+2.求出每个人的总分
+input:	score
+output:	perTScore:array{['name',number1]...,['name',number1]}//2min，耗时5min
+3.求出每个人的平均分
+input:	score
+output:	perAveScore:array{number1,...,numberi}//3min，耗时2min
+4.求出全班总分
+input:	perTScore:array{['name',number1]...,['name',number1]}//3min，耗时2min
+output:	tScore:Number
+
+5.求出总平均分
+input:	perTScore
+	tScore:Number
+output:	sAve:Number//1min，耗时2min
+
+6.对每个人的总分排序
+input:	perTScore:array{['name',number1]...,['name',number1]}
+output:	perTScore:array{['name',number1]...,['name',number1]}//1min，耗时2min
+
+7.求出全班总分中位数
+input:	perTScore:array{['name',number1]...,['name',number1]}
+output:	medianTScore:number//5min，耗时6min
+
+8.创建一个存储学生成绩的二维数组
+input:	score:[[string,number,number,number,number],..., [string,number,number,number,number]]
+	perTScore:array{['name',number1]...,['name',number1]}
+	perAveScore:array{number1,...,numberi}
+output:	vScore:{[name:string,math:number,chinese:number,english:number,coding:number,AScore:number,TScore:number],...    [name:string,math:number,chinese:number,english:number,coding:number,AScore:number,TScore:number]}//5min
+9.打印出成绩单
+input:	vScore
+	sAve:Number
+	scoreAve:string
+	totalScore:string
+	medianTScore:number
+output: report
+	
+//10min 耗时6min
+remarks：长时间花在了调试代码上。
+
+
